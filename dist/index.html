@@ -10,8 +10,8 @@
 
 <body class="font-body">
     <div class="container px-4 mx-auto max-w-5xl">
-        <div class="text-center py-14">
-            <h1 class="text-5xl font bold font-title text-sec">
+        <div class="text-center py-6 md:py-12">
+            <h1 class="text-3xl md:text-5xl font bold font-title text-sec">
                 Nuestro Blog
                 <br>
                 <span class="text-pri">
@@ -25,17 +25,19 @@
                 placeholder="Buscar...">
         </div>
         <section class="main">
-            <div class="grid grid-cols-3 gap-y-6 gap-x-12">
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 sm:gap-y-12 lg:gap-y-16 gap-x-8 lg:gap-x-12">
                 <!-- First row -->
-                <div class="col-span-3">
-                    <a href="#" class="border border-gray-100 flex rounded-3xl overflow-hidden hover:shadow-xl mb-12">
-                        <div class="w-1/2">
+                <div class="col-span-1 md:col-span-2 lg:col-span-3">
+                    <a href="#"
+                        class="border border-gray-100 md:flex rounded-3xl overflow-hidden hover:shadow-xl mb-12">
+                        <div class="md:w-1/2">
                             <img src="img/img1.jpg">
                         </div>
-                        <div class="w-1/2 p-7">
+                        <div class="md:w-1/2 p-3 md:p-7">
                             <p class="px-3 py-1 bg-our-bg rounded text-sec text-xs inline">DESTACADOS</p>
                             <h2
-                                class="font-bold text-pri text-2xl font-title py-3 transition duration-200 hover:text-sec">
+                                class="font-bold text-pri text-xl md:text-2xl font-title py-3 transition duration-200 hover:text-sec">
                                 ¿Porqué es importante seguir un guía
                                 de estilos en un Negocio?
                             </h2>
@@ -120,7 +122,7 @@
 
                 <!-- Third row -->
 
-                <div class="blog-card col-span-2">
+                <div class="blog-card col-span-1 lg:col-span-2">
                     <a href="#">
                         <img src="img/img5.jpg" alt="" class="h-72 w-full">
                         <div class="px-4 pb-2"></div>
@@ -161,8 +163,8 @@
         </section>
 
         <section class="subscribe">
-            <div class="text-center mx-auto py-32">
-                <h5 class="text-4xl font bold font-title text-pri">
+            <div class="text-center mx-auto py-6 md:py-20 lg:py-30">
+                <h5 class="text-3xl lg:text-4xl font bold font-title text-pri">
                     Subscríbete a nuestro
                     <br>
                     <span class="text-sec">
@@ -173,13 +175,15 @@
                     novedades por email</p>
                 <input type="email" class="px-8 py-2 bg-our-bg rounded-3xl shadow-inner focus:outline-none" name="email"
                     id="email" placeholder="Escribe tu email">
-                <input type="submit" class="-ml-12 px-8 py-2 rounded-3xl bg-sec text-white hover:bg-blue-900"
+                <input type="submit"
+                    class="mt-4 sm:mt-0 sm:-ml-12 px-8 py-2 rounded-3xl bg-sec text-white hover:bg-blue-900"
                     value="Submit">
             </div>
         </section>
     </div>
     <footer class="bg-pri">
-        <div class="flex text-white py-8 font-title font-extrabold justify-between max-w-5xl mx-auto tracking-wider">
+        <div
+            class="sm:flex text-center px-12 text-white py-8 font-title font-extrabold justify-between max-w-5xl mx-auto tracking-wider">
             <p>TailwindCSS</p>
             <p>All rights reserved @2023</p>
         </div>
